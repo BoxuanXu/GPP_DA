@@ -26,7 +26,7 @@ all:main
 
 
 run:main
-	bsub -I -n 10 -o gpp_o -e gpp_e -R "span[ptile=5]" mpirun -np 10 ./main
+	bsub -I -n 10 -o gpp_o -e gpp_e -R "span[ptile=40]" mpirun -np 10 ./main
     
 debug:main_d
 	mpirun -np 2 ./main_d
